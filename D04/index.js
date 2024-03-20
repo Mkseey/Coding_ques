@@ -14,11 +14,21 @@ function FindEvenNumbers () {
     //     return item
     //   }
     // }
-    
+
     console.log("result",result)
 
 }
 
 FindEvenNumbers()
+
+console.log(typeof({})) //object 
+console.log(typeof([])) //object
+console.log(typeof(''))  //string
+console.log(typeof(true)) //boolean
+console.log(typeof(2122.44)) //number
+console.log(typeof(null))   // object
+console.log(typeof function () {}) //function
+
+
 
 
