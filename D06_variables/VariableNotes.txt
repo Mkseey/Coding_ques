@@ -1,0 +1,48 @@
+This text file is create by kartik mahurkar.
+===========================================
+
+In the dynamic typed programming or loosly coupled language without using declearing the variable can accesss it.
+
+In javascript there are three types of variable to store the data types(i.e. information).
+i.e 1.var, 2.let, 3.const
+
+By w3schools
+------------
+Variables are Containers for Storing Data.
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const
+
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+The var keyword should only be used in code written for older browsers.
+----------------------------------------------------------------------------
+
+
+var
+---
+Declares a variable, optionally initializing it to a value.
+
+let
+---
+Declares a block scope local variable, optionally initializing it to a value.
+
+const
+-----
+Declares a read-only named constant.
+
+var
+
+
+References
+===========
+https://www.codingninjas.com/studio/library/variables-and-data-types-in-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
+https://www.w3schools.com/js/js_scope.asp#:~:text=JavaScript%20variables%20have%203%20types,Global%20scope
+https://www.w3schools.com/js/js_variables.asp

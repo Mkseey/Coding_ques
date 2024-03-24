@@ -1,0 +1,2 @@
+SyntaxError: Invalid or unexpected token
+ReferenceError: i is not defined
