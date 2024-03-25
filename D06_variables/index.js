@@ -3,9 +3,14 @@
 /*  */
 
 //In the dynamic typed programming or loosly coupled language without using declearing the variable can accesss it.
+// -------------------------------------
+var name1;
+// var name1 = value1;
+// var name1 = value1, name2 = value2;
+var name1, name2 = value2;
+// var name1 = value1, name2, /* …, */ nameN = valueN;
 
-
-
+// -------------------------------------
 
 // a = 10 
 
@@ -43,12 +48,12 @@
 // -------------------------------------
 
 
-for(let i = 0 ; i < 5 ; i++) {
-    console.log(i);
- }
+// for(let i = 0 ; i < 5 ; i++) {
+//     console.log(i);
+//  }
  
- // i is printed when outside the block
- console.log(i);  // ReferenceError: i is not defined
+//  // i is printed when outside the block
+//  console.log(i);  // ReferenceError: i is not defined
 // -------------------------------------
 
 // var a = 10;
