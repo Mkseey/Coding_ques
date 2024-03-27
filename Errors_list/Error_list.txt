@@ -1,2 +1,5 @@
 SyntaxError: Invalid or unexpected token
 ReferenceError: i is not defined
+
+// how to create the key and value in the object ex. let obj = {}  the push()  method is for the array only thats why it gives the error doing in the 
+TypeError: stringCount.push is not a function 
