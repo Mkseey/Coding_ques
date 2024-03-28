@@ -9,12 +9,15 @@ const inventory = [
   let stringCount = {}
 for(let i = 0; i<inventory.length; i++){
     console.log(`${i}`,inventory[i])
-    if(stringCount[inventory.type]){
-        console.log("data",stringCount[inventory.type])
+    if(stringCount[inventory[i].type]){
+        stringCount[inventory[i].type].push(inventory[i]);
+        // console.log("data",stringCount[inventory.type])
         // stringCount[inventory.type] = stringCount + stringCount[inventory.type]
     }else{
-        // stringCount[inventory.type] =+ stringCount[inventory.type]
-        stringCount.push(inventory[i])
+        stringCount[inventory[i].type] = [inventory[i]];
     }
 }
 console.log("data",stringCount)
+
+
+
