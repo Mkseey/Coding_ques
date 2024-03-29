@@ -28,6 +28,10 @@ console.log(typeof(true)) //boolean
 console.log(typeof(2122.44)) //number
 console.log(typeof(null))   // object
 console.log(typeof function () {}) //function
+console.log(typeof undefined) //undefined
+console.log(typeof Undefined) //undefined
+
+
 
 
 

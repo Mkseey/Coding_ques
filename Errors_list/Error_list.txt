@@ -3,3 +3,31 @@ ReferenceError: i is not defined
 
 // how to create the key and value in the object ex. let obj = {}  the push()  method is for the array only thats why it gives the error doing in the 
 TypeError: stringCount.push is not a function 
+
+---------------------------------------------------
+//RangeError: Maximum call stack size exceeded
+there are many way to get this error but one of the way is that this occurs due to we call the 
+here we call the function inside the function 
+function doSomething() {
+    return doSomething();
+}
+doSomething();
+-----------------------
+Below the function is considered as a 
+
+function doSomething() {
+    return
+}
+
+const data =  doSomething();
+console.log("data",data)  //undefined
+------------------------
+
+function doSomething() {
+    // return
+}
+
+const data =  doSomething;
+console.log("data",data())  // undefined
+
+-------------------------------------------------------
