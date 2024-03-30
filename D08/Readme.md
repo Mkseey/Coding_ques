@@ -1,0 +1,1 @@
+Covert this into a flat array and then return minimum value from this array without using any in build method
