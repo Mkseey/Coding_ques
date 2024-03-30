@@ -36,7 +36,20 @@ function squarePattern() {
     for (let row = 0; row < sizeMatrix; row++) {
         let patternStart = '';
         for (let col = 0; col < sizeMatrix; col++) {
-            patternStart = patternStart + '*' + ' '
+            if(row == 0 || row == sizeMatrix-1 ){
+                patternStart = patternStart + '*' + ' '
+
+            }else if(col == 0 ){
+                patternStart = patternStart + '*' + ' '
+            }else if(col == sizeMatrix -1  ){
+                // console.log("col == sizeMatrix ",col )
+                // console.log("sizeMatrix ",sizeMatrix )
+
+                patternStart = patternStart + '*'
+            }
+            else{
+                patternStart = patternStart  + ' ' 
+            }
         }
         console.log(patternStart)
     }
