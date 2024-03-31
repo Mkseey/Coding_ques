@@ -31,6 +31,13 @@ console.log(typeof function () {}) //function
 console.log(typeof undefined) //undefined
 console.log(typeof Undefined) //undefined
 
+let student = {
+    name:"kartik",
+    age:28
+}
+console.log(student?.name)
+console.log(typeof(student))
+console.log(student?.data) // uses the optional chaining
 
 
 
