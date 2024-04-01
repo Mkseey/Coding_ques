@@ -7,3 +7,45 @@ like {
         fruitsName:""
     }]
 }
+
+[
+    {
+        "payheadCode": "HRA",
+        "payheadDependentDetailModel": [
+            {
+                "payheadCode": "HRA",
+                "attributeTypeDesc": "Company|Branch",
+            },
+            {
+                "payheadCode": "TRPALL",
+                "attributeTypeDesc": "Company|Branch",
+            },
+        ]
+    },
+    {
+        "payheadCode": "TRPALL",
+        "payheadDependentDetailModel": [
+            {
+                "payheadCode": "TRPALL",
+                "attributeTypeDesc": "Company|Branch",
+            },
+            {
+                "payheadCode": "TRPALL",
+                "attributeTypeDesc": "Company|Branch",
+            },
+        ]
+    },
+    {
+        "payheadCode": "TRPALL",
+        "payheadDependentDetailModel": [
+            {
+                "payheadCode": "HRA",
+                "attributeTypeDesc": "Company|Branch",
+            },
+            {
+                "payheadCode": "TRPALL",
+                "attributeTypeDesc": "Company|Branch",
+            },
+        ]
+    }
+]

@@ -1,1 +1,29 @@
 Print the square in pattern program 
+
+
+------------------------------------
+
+
+// o/p
+// ---
+// ******
+// *****
+// ****
+// ***
+// **
+// *
+
+function pattern (){
+    let count = '*';
+     let size_matrix = 5;
+    for(let i = 0; i<=size_matrix;i++){
+      let z = '';
+        for(let j = i; j<=size_matrix; j++){
+            z = z + count 
+        }
+        console.log(z)
+    }
+}
+
+pattern();
+----------------------------------------------
