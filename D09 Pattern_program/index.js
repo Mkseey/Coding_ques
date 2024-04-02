@@ -30,26 +30,31 @@
 
 // right_angle_pattern();
 
-
+//This square form the from 2*2  to  61 * 61 in my screen
 function squarePattern() {
-    let sizeMatrix = 10;
+    let sizeMatrix = 5;
     for (let row = 0; row < sizeMatrix; row++) {
         let patternStart = '';
         for (let col = 0; col < sizeMatrix; col++) {
             if(row == 0 || row == sizeMatrix-1 ){
                 patternStart = patternStart + '*' + ' '
 
-            }else if(col == 0 ){
+            }else if(col == 0 ){  // This condition is for the left side of the square  i.e left border of square
                 patternStart = patternStart + '*' + ' '
-            }else if(col == sizeMatrix -1  ){
-                // console.log("col == sizeMatrix ",col )
-                // console.log("sizeMatrix ",sizeMatrix )
+            }else if(col == sizeMatrix -1 ){  // This condition is for the right side of the square i.e right border of square
+                 // i need this for loop to right side border came at the col = greater than 1 middle value of more than 3*3 square
+                for(let spaceAdd=1; spaceAdd < sizeMatrix; spaceAdd++){
+                    if(spaceAdd == sizeMatrix-1){
+                        break;
+                    }
+                    patternStart = patternStart + '  '
+                }
 
-                patternStart = patternStart + '*'
+                patternStart =  patternStart + '*'
             }
-            else{
-                patternStart = patternStart  + ' ' 
-            }
+            // else{
+            //     patternStart = patternStart  + ' '  
+            // }
         }
         console.log(patternStart)
     }
