@@ -47,14 +47,14 @@ function squarePattern() {
                     if(spaceAdd == sizeMatrix-1){
                         break;
                     }
-                    patternStart = patternStart + '  '
+                    patternStart = patternStart + ' '
                 }
 
                 patternStart =  patternStart + '*'
             }
-            // else{
-            //     patternStart = patternStart  + ' '  
-            // }
+            else{
+                patternStart = patternStart  + ' '  
+            }
         }
         console.log(patternStart)
     }
