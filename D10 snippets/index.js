@@ -125,14 +125,44 @@
 //     var x = 10;
 //     function inner() {
 //         console.log(x);
+//         // return x
 //     }
 //     x = 20;
 //     return inner;
 // }
 // var closureFn = outer();
 // closureFn();
+// outer()
 
+//-------------------------------------------------------
 
+//code snippet 09
+
+// function data(){
+//     var a = 10;
+//     var b = new Number(3)
+//     console.log("",a == b)
+//     console.log("",a === b)
+//     console.log("",typeof(a) == typeof(a))
+//     console.log("",typeof(a) === typeof(a))
+//     console.log("type of a", typeof(a))
+//     console.log("type of a", typeof(b))
+// }
+// data()
+
+//-------------------------------------------------------------
+
+function createBase(baseNumber) {
+    return function(N) {
+      // we are referencing baseNumber here even though it was declared
+      // outside of this function. Closures allow us to do this in JavaScript
+      return baseNumber + N;
+    }
+  }
+  
+  var addSix = createBase(6);
+  addSix(10);
+  addSix(21);
 
 
 
