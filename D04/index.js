@@ -20,17 +20,24 @@ function FindEvenNumbers () {
 }
 
 FindEvenNumbers()
+//=================================================================
+//How to find the object is empty or not 
+let obj={}
 
-console.log(typeof({})) //object 
-console.log(typeof([])) //object
-console.log(typeof(''))  //string
-console.log(typeof(true)) //boolean
-console.log(typeof(2122.44)) //number
-console.log(typeof(null))   // object
-console.log(typeof function () {}) //function
-console.log(typeof undefined) //undefined
+console.log("object length",obj.length)
+
+console.log("-------------------------------")
+
+console.log("Typeof empty object",typeof({})) //object 
+console.log("Typeof empty array",typeof([])) //object
+console.log("Typeof string",typeof(''))  //string
+console.log("Typeof boolean",typeof(true)) //boolean
+console.log("Typeof empty number",typeof(2122.44)) //number
+console.log("Typeof  null",typeof(null))   // object
+console.log("Typeof empty function",typeof function () {}) //function
+console.log("Typeof empty undefined",typeof undefined) //undefined
 console.log(typeof Undefined) //undefined
-
+console.log("-------------------------------")
 let student = {
     name:"kartik",
     age:28
@@ -38,6 +45,26 @@ let student = {
 console.log(student?.name)
 console.log(typeof(student))
 console.log(student?.data) // uses the optional chaining
+
+console.log("-------------------------------")
+console.log("compare empty array",[] == [])
+console.log("compare empty array", [] === [])
+console.log("compare empty string","" == "")
+console.log("compare empty string","" === "")
+console.log("compare empty object",{} == {})
+console.log("compare empty object",{} === {})
+console.log("-------------------------------")
+console.log("compare typeof empty array",typeof([]) == typeof([]))
+console.log("compare typeof empty array", typeof([]) === typeof([]))
+console.log("compare typeof empty string","" == "")
+console.log("compare typeof empty string","" === "")
+console.log("compare typeof empty object",typeof({}) == typeof({}))
+console.log("compare typeof empty object",typeof({}) === typeof({}))
+
+
+
+
+
 
 
 
