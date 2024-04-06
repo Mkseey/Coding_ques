@@ -169,6 +169,9 @@
 // console.log("")
 //----------------------------------------------------------------------
 
+//code snippet 11
+
+
 // const a= {
 //     dev :"hii",
 //     update:name =>{
@@ -182,6 +185,25 @@
 //-------------------------------------------------------------------------
 
 
+//code snippet 12
+
+const management =employee =>{
+  const salary = 1000; //hidden data
+  return () =>{
+    Object.assign(employee,{
+      salary,
+    })
+    return employee; //{name: "naruto", salary : 10000}
+  }
+}
+
+const employee = {
+  name:"naruto",
+  salary:null,
+}
+const payroll = management(employee);
+console.log("dagf",payroll());
+//---------------------------------------------------
 
 
 
