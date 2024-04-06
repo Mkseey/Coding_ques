@@ -187,25 +187,34 @@
 
 //code snippet 12
 
-const management =employee =>{
-  const salary = 1000; //hidden data
-  return () =>{
-    Object.assign(employee,{
-      salary,
-    })
-    return employee; //{name: "naruto", salary : 10000}
-  }
-}
+// const management =employee =>{
+//   const salary = 1000; //hidden data
+//   return () =>{
+//     Object.assign(employee,{
+//       salary,
+//     })
+//     return employee; //{name: "naruto", salary : 10000}
+//   }
+// }
 
-const employee = {
-  name:"naruto",
-  salary:null,
-}
-const payroll = management(employee);
-console.log("dagf",payroll());
+// const employee = {
+//   name:"naruto",
+//   salary:null,
+// }
+// const payroll = management(employee);
+// console.log("dagf",payroll());
 //---------------------------------------------------
-
-
-
-
-
+//code snippet 13
+const attackOnMks =() =>{
+  const character1 = "mks";
+  return() =>{
+    const character2 = "data";
+    return() =>{
+      const charater3 = 'list';
+      return () =>{
+        return [character1,character2,charater3]
+      };
+    };
+  };
+};
+console.log("function console",attackOnMks()()()());
