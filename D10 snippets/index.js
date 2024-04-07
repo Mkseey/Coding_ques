@@ -205,16 +205,57 @@
 // console.log("dagf",payroll());
 //---------------------------------------------------
 //code snippet 13
-const attackOnMks =() =>{
-  const character1 = "mks";
-  return() =>{
-    const character2 = "data";
-    return() =>{
-      const charater3 = 'list';
-      return () =>{
-        return [character1,character2,charater3]
-      };
-    };
+// const attackOnMks =() =>{
+//   const character1 = "mks";
+//   return() =>{
+//     const character2 = "data";
+//     return() =>{
+//       const charater3 = 'list';
+//       return () =>{
+//         return [character1,character2,charater3]
+//       };
+//     };
+//   };
+// };
+// console.log("function console",attackOnMks()()()());
+
+//-----------------------------------------------
+//code snippet 140
+
+function MyObject(name, message) {
+  this.name = name.toString();
+  this.message = message.toString();
+  this.getName = function () {
+    return this.name;
   };
+
+  this.getMessage = function () {
+    return this.message;
+  };
+}
+
+function MyObject(name, message) {
+  this.name = name.toString();
+  this.message = message.toString();
+}
+MyObject.prototype = {
+  getName() {
+    return this.name;
+  },
+  getMessage() {
+    return this.message;
+  },
 };
-console.log("function console",attackOnMks()()()());
+
+
+
+function MyObject(name, message) {
+  this.name = name.toString();
+  this.message = message.toString();
+}
+MyObject.prototype.getName = function () {
+  return this.name;
+};
+MyObject.prototype.getMessage = function () {
+  return this.message;
+};
