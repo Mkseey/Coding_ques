@@ -220,42 +220,66 @@
 // console.log("function console",attackOnMks()()()());
 
 //-----------------------------------------------
-//code snippet 140
+//code snippet 14
 
-function MyObject(name, message) {
-  this.name = name.toString();
-  this.message = message.toString();
-  this.getName = function () {
-    return this.name;
+// function MyObject(name, message) {
+//   this.name = name.toString();
+//   this.message = message.toString();
+//   this.getName = function () {
+//     return this.name;
+//   };
+
+//   this.getMessage = function () {
+//     return this.message;
+//   };
+// }
+
+// function MyObject(name, message) {
+//   this.name = name.toString();
+//   this.message = message.toString();
+// }
+// MyObject.prototype = {
+//   getName() {
+//     return this.name;
+//   },
+//   getMessage() {
+//     return this.message;
+//   },
+// };
+
+
+
+// function MyObject(name, message) {
+//   this.name = name.toString();
+//   this.message = message.toString();
+// }
+// MyObject.prototype.getName = function () {
+//   return this.name;
+// };
+// MyObject.prototype.getMessage = function () {
+//   return this.message;
+// };
+
+//---------------------------------------------------------
+// code snippet 15
+// global scope
+const e = 10;
+function sum(a) {
+  return function sum2(b) {
+    return function sum3(c) {
+      // outer functions scope
+      return function sum4(d) {
+        // local scope
+        return a + b + c + d + e;
+      };
+    };
   };
-
-  this.getMessage = function () {
-    return this.message;
-  };
 }
 
-function MyObject(name, message) {
-  this.name = name.toString();
-  this.message = message.toString();
-}
-MyObject.prototype = {
-  getName() {
-    return this.name;
-  },
-  getMessage() {
-    return this.message;
-  },
-};
+const sum2 = sum(1);
+const sum3 = sum2(2);
+const sum4 = sum3(3);
+const result = sum4(4);
+console.log(result); // 20
 
-
-
-function MyObject(name, message) {
-  this.name = name.toString();
-  this.message = message.toString();
-}
-MyObject.prototype.getName = function () {
-  return this.name;
-};
-MyObject.prototype.getMessage = function () {
-  return this.message;
-};
+// setupHelp();
