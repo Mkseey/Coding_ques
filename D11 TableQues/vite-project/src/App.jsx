@@ -14,9 +14,9 @@ function App() {
   }]);
 
 
-  const handleAddTop = (value) => {
+  // const handleAddTop = (value) => {
 
-  }
+  // }
   const addBottomRow = (value) => {
     // newData came because the when we add the object directly to push method 
     const newData = [
@@ -25,27 +25,33 @@ function App() {
     ];
     setData(newData);
   };
-  const removeBottomRow = (value) => {
-    const newDatalist = []
-    for (let i = 0; i <= data.length; i++) {
-      //  console.log("dat",value)
-      //  console.log("ivalue",i)
-      //  console.log(" i== value", i == value)
-      if (!(value == i)) {
-        if (!(data[i] == undefined)) {
-          newDatalist.push(data[i])
-        }
-      }
-    }
-    console.log("newDatalist", newDatalist)
-    setData(newDatalist);
+  // const removeBottomRow = (value) => {
+  //   const newDatalist = []
+  //   for (let i = 0; i <= data.length; i++) {
+  //     //  console.log("dat",value)
+  //     //  console.log("ivalue",i)
+  //     //  console.log(" i== value", i == value)
+  //     if (!(value == i)) {
+  //       if (!(data[i] == undefined)) {
+  //         newDatalist.push(data[i])
+  //       }
+  //     }
+  //   }
+  //   console.log("newDatalist", newDatalist)
+  //   setData(newDatalist);
+  // };
+  const removeBottomRow = () => {
+    setData(prevData => prevData.slice(0, -1));
+  };
+  const handleAddTop = (value) => {
+    setData([value, ...data])
   };
 
   console.log("asdfasf", data)
   return (
     <>
       <button onClick={() => {
-        handleAddTop(0)
+        handleAddTop({ id: 3, name: "John", lastName: "Doe" })
       }
       }>
         Add top
