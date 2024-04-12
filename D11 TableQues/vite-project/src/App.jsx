@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -13,10 +13,6 @@ function App() {
     lastName: "mahurkar"
   }]);
 
-
-  // const handleAddTop = (value) => {
-
-  // }
   const addBottomRow = (value) => {
     // newData came because the when we add the object directly to push method 
     const newData = [
@@ -41,13 +37,23 @@ function App() {
   //   setData(newDatalist);
   // };
   const removeBottomRow = () => {
-    setData(prevData => prevData.slice(0, -1));
+    // setData(prevData => prevData.slice(0, -1));
+    const newData = [...data.slice(0, -1)];
+    setData(newData);
+
+
   };
   const handleAddTop = (value) => {
     setData([value, ...data])
   };
 
   console.log("asdfasf", data)
+  const removeFirstEntry = () => {
+    if (data.length > 0) {
+      const newData = [...data.slice(1)];
+      setData(newData);
+    }
+  };
   return (
     <>
       <button onClick={() => {
@@ -56,6 +62,13 @@ function App() {
       }>
         Add top
       </button>
+      <button onClick={() => {
+        removeFirstEntry()
+      }
+      }>
+        Remove top
+      </button>
+
       <table>
         <thead>
           <tr>
