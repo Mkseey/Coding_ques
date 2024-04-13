@@ -17,3 +17,20 @@ function ReverseString(){
 
 ReverseString()
 
+
+//Write a function that returns the reverse of a string.
+
+Reverse("GOD kartik")
+
+function Reverse(str){
+
+  let revStr ='';
+   for(let reverseStr=str.length-1; reverseStr >= 0; reverseStr-- ){
+     revStr = revStr + str[reverseStr]
+   }
+   console.log(revStr)
+  
+  let string = str.split('').reverse().join('');
+  console.log(string)
+
+}
