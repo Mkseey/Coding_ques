@@ -31,3 +31,31 @@ const data =  doSomething;
 console.log("data",data())  // undefined
 
 -------------------------------------------------------
+Oops, something went wrong.  Please report this bug with the details below.
+Report on GitHub: https://github.com/lzybkr/PSReadLine/issues/new
+-----------------------------------------------------------------------
+Last 78 Keys:
+ Ctrl+v Ctrl+z c d Space D 1 6 Tab Enter
+ Ctrl+v Enter
+ Ctrl+v UpArrow Space - f Enter
+ Ctrl+v Space - f Enter
+ Ctrl+v Space - f Enter
+ Ctrl+v Space - f Enter
+ n p m Space i Space Enter
+ c d Space L Tab Enter
+ M Backspace Backspace Backspace N Backspace Backspace n p m Space i Enter
+ n Backspace Backspace Backspace c l d a Backspace Backspace e a r Enter
+ n Backspace Backspace Backspace Ctrl+v
+
+Exception:
+System.ArgumentOutOfRangeException: The value must be greater than or equal to zero and less than 
+the console's buffer size in that dimension.
+Parameter name: top
+Actual value was -1.
+   at System.Console.SetCursorPosition(Int32 left, Int32 top)
+   at Microsoft.PowerShell.PSConsoleReadLine.ReallyRender(RenderData renderData, String defaultColor)
+   at Microsoft.PowerShell.PSConsoleReadLine.ForceRender()
+   at Microsoft.PowerShell.PSConsoleReadLine.Paste(Nullable`1 key, Object arg)
+   at Microsoft.PowerShell.PSConsoleReadLine.ProcessOneKey(ConsoleKeyInfo key, Dictionary`2 dispat   at Microsoft.PowerShell.PSConsoleReadLine.InputLoop()
+   at Microsoft.PowerShell.PSConsoleReadLine.ReadLine(Runspace runspace, EngineIntrinsics engineIntrinsics)
+--------------------------------------------------------------------------------------------------------

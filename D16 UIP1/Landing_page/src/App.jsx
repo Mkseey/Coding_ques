@@ -1,14 +1,14 @@
-import './App.css'
 
+import {Box} from "@mui/material"
+import "./App.css"
+import Header from "./components/header"
 function App() {
-
-
   return (
     <>
-      <div>
+    <Header/>
+      <Box>
         
-        </div>
-  
+      </Box>
     </>
   )
 }
