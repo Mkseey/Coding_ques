@@ -9,7 +9,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 const navItems = ['Home', 'Discover', 'Special Deals', 'Contact'];
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     Toolbar: {
         boxShadow: "none !important",
         backgroundColor: "white !important",
