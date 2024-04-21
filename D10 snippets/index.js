@@ -284,13 +284,23 @@
 
 //----------------------------------------------------------------------------------
 
-let foo = "value";
+// let foo = "value";
 
-function value () {
-     foo = "name"
-     function foo () {}
-     console.log("data",foo)
-}
-value();
+// function value () {
+//      foo = "name"
+//      function foo () {}
+//      console.log("data",foo)
+// }
+// value();
+
+//------------------------------------------------------------
+
+let variable =  new Promise((req, resp)=>{
+     setTimeout(()=>{
+console.log("value")
+     },1000)
+})
+
+console.log("valiable",variable)
 
 
