@@ -59,3 +59,8 @@ Actual value was -1.
    at Microsoft.PowerShell.PSConsoleReadLine.ProcessOneKey(ConsoleKeyInfo key, Dictionary`2 dispat   at Microsoft.PowerShell.PSConsoleReadLine.InputLoop()
    at Microsoft.PowerShell.PSConsoleReadLine.ReadLine(Runspace runspace, EngineIntrinsics engineIntrinsics)
 --------------------------------------------------------------------------------------------------------
+ Uncaught TypeError: Cannot read properties of undefined (reading 'GlobalWorkerOptions')
+  while reading the pdf file
+--------------------------------------------------------------------------------------------------------
+Uncaught SyntaxError: Cannot use import statement outside a module
+------------------------------------------------------------------------------------------------------------
